@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Clock, Heart, Shield, Camera, MapPin } from "lucide-react";
 import { useState } from "react";
-
+import kukurLogo from "@/assets/simple-logo.png";
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
@@ -54,15 +54,38 @@ const Services = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16 animate-fade-in-up">
+        {/* <div className="text-center mb-16 animate-fade-in-up">
+          <img 
+                        src={kukurLogo} 
+                        alt="Kukur - Professional Dog Walking Service" 
+                        className="h-18 w-auto md:h-12 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
+                      />
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Why Choose <span className="text-orange animate-glow">Kukur</span>?
+            Why Choose <span className="text-orange ">Kukur</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We provide comprehensive dog walking services with the highest standards of care, 
             safety, and professionalism. Your pet's happiness is our priority.
           </p>
-        </div>
+        </div> */}
+
+        <div className="container mx-auto px-4 relative z-10">
+  <div className="text-center mb-16 animate-fade-in-up group">
+    <h2 className="flex items-center justify-center text-4xl md:text-5xl font-bold mb-6 gap-3">
+      <img
+        src={kukurLogo}
+        alt="Kukur - Professional Dog Walking Service"
+        className="h-25 w-auto md:h-12 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
+      />
+      Why Choose <span className="text-orange-500 ml-2">Kukur</span>?
+    </h2>
+    <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+      We provide comprehensive dog walking services with the highest standards of care,
+      safety, and professionalism. Your pet's happiness is our priority.
+    </p>
+  </div>
+</div>
+
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (

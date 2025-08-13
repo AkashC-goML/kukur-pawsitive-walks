@@ -31,7 +31,7 @@ const Header = () => {
             <img 
               src={kukurLogo} 
               alt="Kukur - Professional Dog Walking Service" 
-              className="h-10 w-auto md:h-12 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
+              className="h-18 w-auto md:h-12 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
             />
           </div>
           

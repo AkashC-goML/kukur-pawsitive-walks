@@ -72,7 +72,7 @@ const Pricing = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Transparent <span className="text-blue animate-glow">Pricing</span>
+            Transparent <span className="text-blue ">Pricing</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Choose the perfect plan for your furry friend. All plans include our full range of 
@@ -95,7 +95,7 @@ const Pricing = () => {
             >
               {/* Glowing Effect for Popular Plan */}
               {plan.popular && (
-                <div className="absolute -inset-1 bg-gradient-to-r from-orange via-blue to-orange-light rounded-lg blur opacity-20 group-hover:opacity-40 transition-opacity duration-500 animate-glow"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-orange via-blue to-orange-light rounded-lg blur opacity-20 group-hover:opacity-40 transition-opacity duration-500 "></div>
               )}
               
               {/* Popular Badge with Animation */}
@@ -110,7 +110,7 @@ const Pricing = () => {
                 <div className="flex items-center justify-center gap-2 mb-4">
                   <div className={`p-2 rounded-full transition-all duration-500 ${
                     plan.popular 
-                      ? 'bg-gradient-to-r from-orange to-blue text-white animate-glow' 
+                      ? 'bg-gradient-to-r from-orange to-blue text-white ' 
                       : 'bg-muted text-muted-foreground group-hover:bg-gradient-to-r group-hover:from-orange/20 group-hover:to-blue/20 group-hover:text-blue'
                   }`}>
                     {plan.icon}

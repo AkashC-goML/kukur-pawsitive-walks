@@ -119,23 +119,31 @@ const WalkerRequirements = () => {
           ))}
         </div>
         
+
         {/* Responsibilities Section */}
-        <Card className="max-w-4xl mx-auto border-2 border-orange/20 shadow-lg">
-          <CardHeader className="text-center bg-gradient-to-r from-orange/5 to-blue/5">
-            <CardTitle className="text-2xl font-bold mb-2">Daily Responsibilities</CardTitle>
-            <p className="text-muted-foreground">What our professional dog walkers do every day</p>
-          </CardHeader>
-          <CardContent className="pt-6">
-            <div className="grid md:grid-cols-2 gap-4">
-              {responsibilities.map((responsibility, index) => (
-                <div key={index} className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                  <Badge variant="secondary" className="mt-1 bg-blue text-white">{index + 1}</Badge>
-                  <span className="text-sm">{responsibility}</span>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+<Card className="max-w-4xl mx-auto border-2 border-orange/20 shadow-lg">
+  <CardHeader className="text-center bg-gradient-to-r from-orange/5 to-blue/5">
+    <CardTitle className="text-2xl font-bold mb-2">Daily Responsibilities</CardTitle>
+    <p className="text-muted-foreground">What our professional dog walkers do every day</p>
+  </CardHeader>
+  <CardContent className="pt-6">
+    <div className="grid md:grid-cols-2 gap-4">
+      {responsibilities.map((responsibility, index) => (
+        <div
+          key={index}
+          className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors"
+        >
+          <div className="flex items-center justify-center w-8 h-8 rounded-full bg-orange/20 text-orange font-bold">
+            🐾
+          </div>
+          <span className="text-sm">{responsibility}</span>
+        </div>
+      ))}
+    </div>
+  </CardContent>
+</Card>
+
+
       </div>
     </section>
   );

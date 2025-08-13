@@ -52,7 +52,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Service Area</h4>
-                    <p className="text-muted-foreground">Pune, Maharashtra</p>
+                    <p className="text-muted-foreground">Your city</p>
                   </div>
                 </div>
                 

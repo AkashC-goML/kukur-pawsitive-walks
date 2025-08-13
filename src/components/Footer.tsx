@@ -12,11 +12,11 @@ const Footer = () => {
               <img 
                 src={kukurLogo} 
                 alt="Kukur" 
-                className="h-12 w-auto"
+                className="h-15 w-auto"
               />
             </div>
             <p className="text-white/80 leading-relaxed mb-6">
-              Professional dog walking services in Pune. We provide loving, reliable care for your furry family members.
+              Professional dog walking services in your city. We provide loving, reliable care for your furry family members.
             </p>
             <div className="flex items-center gap-2 text-sm text-white/70">
               <Heart className="h-4 w-4 text-orange" />
@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 text-orange" />
-                <span>Pune, Maharashtra</span>
+                <span>Your city</span>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ const Footer = () => {
         
         <div className="border-t border-white/20 mt-12 pt-8 text-center">
           <p className="text-white/70">
-            © 2024 Kukur. All rights reserved. | Professional Dog Walking Services in Pune
+            © 2024 Kukur. All rights reserved. | Professional Dog Walking Services in your city
           </p>
         </div>
       </div>

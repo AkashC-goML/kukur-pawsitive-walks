@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in-up">
             Professional Dog Walking Services in 
-            <span className="bg-gradient-to-r from-orange to-blue bg-clip-text text-transparent animate-glow inline-block"> Pune</span>
+            <span className="bg-gradient-to-r from-orange to-blue bg-clip-text text-transparent  inline-block"> Your city</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90 animate-fade-in-up [animation-delay:0.3s] [animation-fill-mode:both]">
@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up [animation-delay:0.6s] [animation-fill-mode:both]">
             <Button 
               size="lg" 
-              className="group bg-gradient-to-r from-orange to-orange-light hover:from-orange-light hover:to-orange text-white text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:animate-glow"
+              className="group bg-gradient-to-r from-orange to-orange-light hover:from-orange-light hover:to-orange text-white text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:"
               onClick={scrollToServices}
             >
               <span className="group-hover:animate-bounce">Book a Walk Today</span>
